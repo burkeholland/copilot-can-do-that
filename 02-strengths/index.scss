@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+footer {
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.conversation-wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversation {
+    width: 100%;
+    text-align: left;
+}
+
+#newMessage {
+    min-width: 300px;
+    margin: auto;
+}
+
+.new-message {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box {
+    padding: 10px;
+    max-height: 200px;
+    height: 72px;
+    overflow-y: hidden;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 85%;
+}
+
+.message.user {
+    float: right;
+    background-color: #479ef5;
+    color: white;
+}
+
+.message.assistant {
+    float: left;
+    background-color: #e6e6e6;
+    color: black;
+}
+
+.clearfix {
+    overflow: auto;
+}
